@@ -5,23 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mirante Solar</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="logo.png" type="image/png" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 </head>
 <body>
   <header>
     <div class="header-content">
       <img src="logo.png" alt="Logo Mirante Solar" class="logo" />
       <nav>
-        <button class="menu-toggle" aria-label="Abrir menu">
-          ☰
-        </button>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
         <ul class="menu">
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#avaliacoes">Avaliações</a></li>
-          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#avaliacoes">Clientes</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
@@ -29,96 +26,104 @@
   </header>
 
   <section class="hero-banner">
-    <img src="banner.jpg" alt="Banner Mirante Solar" class="banner-img" />
+    <img src="banner.jpg" alt="Banner" class="banner-img">
     <div class="hero-overlay">
       <h1>Energia Solar ao Seu Alcance</h1>
       <p>Atendendo Belém, Ananindeua, Marituba e Benevides com soluções completas em energia solar.</p>
-      <a href="#contato" class="btn-agende">Agende uma visita gratuita</a>
+      <a href="#contato" class="btn-agende">Agende uma Visita</a>
     </div>
   </section>
 
-  <section id="sobre" class="section" data-aos="fade-up">
+  <section class="section" id="sobre">
     <h2>Quem Somos</h2>
-    <img src="socios.jpeg" alt="Sócios da empresa" class="socios" />
-    <p class="frase-socios">Unindo conhecimento e propósito para transformar o seu futuro com energia limpa!</p>
-    <h3>Missão</h3>
-    <p>Oferecer soluções sustentáveis em energia solar com excelência, confiabilidade e impacto positivo nas comunidades atendidas.</p>
-    <h3>Visão</h3>
-    <p>Ser referência em energia solar no Pará, promovendo um futuro mais limpo e acessível.</p>
-    <h3>Valores</h3>
-    <ul>
-      <li>Comprometimento com o cliente</li>
-      <li>Sustentabilidade</li>
-      <li>Transparência</li>
-      <li>Inovação</li>
-      <li>Responsabilidade social</li>
-    </ul>
+    <img src="socios.jpeg" alt="Sócios Mirante Solar" class="socios">
+    <p class="frase-socios">Transformando energia solar em economia e sustentabilidade para o seu lar.</p>
+    <div class="info-blocos">
+      <div class="bloco">
+        <span class="material-symbols-outlined">flag</span>
+        <h3>Missão</h3>
+        <p>Oferecer soluções sustentáveis em energia solar com excelência, confiabilidade e impacto positivo nas comunidades atendidas.</p>
+      </div>
+      <div class="bloco">
+        <span class="material-symbols-outlined">visibility</span>
+        <h3>Visão</h3>
+        <p>Ser referência em energia solar no Pará, promovendo um futuro mais limpo e acessível.</p>
+      </div>
+      <div class="bloco">
+        <span class="material-symbols-outlined">verified</span>
+        <h3>Valores</h3>
+        <ul>
+          <li>Comprometimento com o cliente</li>
+          <li>Sustentabilidade</li>
+          <li>Transparência</li>
+          <li>Inovação</li>
+          <li>Responsabilidade social</li>
+        </ul>
+      </div>
+    </div>
   </section>
 
-  <section id="servicos" class="section" data-aos="fade-up">
-    <h2>Serviços</h2>
-    <ul>
-      <li>Instalação de sistemas fotovoltaicos</li>
-      <li>Manutenção preventiva e corretiva</li>
-      <li>Consultoria e dimensionamento de projetos solares</li>
-    </ul>
+  <section class="section" id="servicos">
+    <h2>Nossos Serviços</h2>
+    <div class="info-blocos">
+      <div class="bloco">
+        <span class="material-symbols-outlined">solar_power</span>
+        <h3>Instalação</h3>
+        <p>Projetos personalizados de sistemas fotovoltaicos para sua casa ou empresa.</p>
+      </div>
+      <div class="bloco">
+        <span class="material-symbols-outlined">build</span>
+        <h3>Manutenção</h3>
+        <p>Preventiva e corretiva para garantir máxima performance do seu sistema solar.</p>
+      </div>
+      <div class="bloco">
+        <span class="material-symbols-outlined">engineering</span>
+        <h3>Consultoria</h3>
+        <p>Dimensionamento e análise completa para viabilidade de projetos solares.</p>
+      </div>
+    </div>
   </section>
 
-  <section id="avaliacoes" class="section" data-aos="fade-up">
+  <section class="section">
+    <h2>Algumas de Nossas Instalações</h2>
+    <div class="galeria">
+      <img src="inst1.jpeg" alt="Instalação 1">
+      <img src="inst2.jpeg" alt="Instalação 2">
+      <img src="inst3.jpeg" alt="Instalação 3">
+      <img src="inst4.jpeg" alt="Instalação 4">
+      <img src="inst5.jpeg" alt="Instalação 5">
+      <img src="inst6.jpeg" alt="Instalação 6">
+    </div>
+  </section>
+
+  <section class="section" id="avaliacoes">
     <h2>O que dizem nossos clientes</h2>
     <div class="avaliacao">
-      <p>"Serviço impecável e atendimento excelente. Muito satisfeito com minha economia!"</p>
-      <span>- João Carvalho</span>
+      "Serviço de qualidade e ótimo atendimento! Estou muito satisfeito com o resultado."
+      <span>– João da Silva</span>
     </div>
     <div class="avaliacao">
-      <p>"Equipe competente e prestativa. O sistema foi instalado com rapidez e qualidade."</p>
-      <span>- Maria Ferreira</span>
+      "Equipe atenciosa e trabalho impecável. Super recomendo a Mirante Solar!"
+      <span>– Maria Oliveira</span>
     </div>
     <div class="avaliacao">
-      <p>"Muito profissionalismo do começo ao fim. Recomendo a Mirante Solar sem hesitar."</p>
-      <span>- Carlos Oliveira</span>
+      "O investimento valeu cada centavo. Já vejo diferença na conta de luz."
+      <span>– Carlos Mendes</span>
     </div>
   </section>
 
-  <section id="galeria" class="section" data-aos="fade-up">
-    <h2>Nossas Instalações</h2>
-    <div class="galeria">
-      <img src="inst1.jpeg" alt="Instalação 1" />
-      <img src="inst2.jpeg" alt="Instalação 2" />
-      <img src="inst3.jpeg" alt="Instalação 3" />
-      <img src="inst4.jpeg" alt="Instalação 4" />
-      <img src="inst5.jpeg" alt="Instalação 5" />
-      <img src="inst6.jpeg" alt="Instalação 6" />
-    </div>
-  </section>
-
-  <section id="contato" class="section" data-aos="fade-up">
+  <section class="section" id="contato">
     <h2>Fale Conosco</h2>
-    <form action="https://formspree.io/f/xayrpkzj" method="POST" class="form-contato">
-      <input type="text" name="nome" placeholder="Seu nome" required />
-      <input type="email" name="email" placeholder="Seu email" required />
-      <textarea name="mensagem" rows="5" placeholder="Digite sua mensagem" required></textarea>
-      <button type="submit">Enviar Mensagem</button>
+    <form class="form-contato">
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu e-mail" required>
+      <textarea rows="5" placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
     </form>
-    <p><strong>Telefone:</strong> (91) 98402-4053</p>
-    <p><strong>Email:</strong> mirantesolar2023@gmail.com</p>
+    <p>Email: mirantesolar2023@gmail.com<br>Telefone: (91) 98402-4053</p>
   </section>
 
-  <a href="https://wa.me/5591984024053" class="whatsapp" target="_blank">💬</a>
+  <a class="whatsapp" href="https://wa.me/5591984024053" target="_blank" title="Fale conosco no WhatsApp">💬</a>
 
   <footer>
-    <p>&copy; 2025 Mirante Solar - Todos os direitos reservados.</p>
-  </footer>
-
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-
-    const toggleBtn = document.querySelector('.menu-toggle');
-    const menu = document.querySelector('.menu');
-    toggleBtn.addEventListener('click', () => {
-      menu.classList.toggle('active');
-    });
-  </script>
-</body>
-</html>
+    &copy; 2025 Mirant
