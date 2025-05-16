@@ -1,346 +1,132 @@
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mirante Solar</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img src="logo.png" alt="Logo Mirante Solar" class="logo" />
+      <nav>
+        <button class="menu-toggle">☰</button>
+        <ul class="menu">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#avaliacoes">Avaliações</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #07343f;
-  background-color: #fdffff;
-  line-height: 1.6;
-}
+  <section class="hero-banner">
+    <img src="banner.jpg" alt="Banner Mirante Solar" class="banner-img" />
+    <div class="hero-overlay">
+      <h1>ENERGIA SOLAR AO SEU ALCANCE</h1>
+      <p>Atendendo Belém, Ananindeua, Marituba e Benevides com soluções completas em energia solar.</p>
+      <a href="https://wa.me/5598984024053" class="btn-agende">Agende uma visita</a>
+    </div>
+  </section>
 
-header {
-  background-color: white;
-  color: #07343f;
-  padding: 10px 20px;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 999;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+  <section class="section" id="sobre">
+    <h2>Quem Somos</h2>
+    <div class="galeria">
+      <img src="socios.jpeg" alt="Sócios da empresa" />
+      <img src="socios2.jpeg" alt="Equipe Mirante Solar" />
+      <img src="socios3.jpg" alt="Colaboradores" />
+      <img src="socios4.jpg" alt="Trabalho em equipe" />
+    </div>
+    <p class="frase-socios">Comprometidos com um futuro mais limpo e sustentável!</p>
+  </section>
 
-.header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  <section class="section" id="institucional">
+    <div class="cartoes">
+      <div class="cartao">
+        <h3>Missão</h3>
+        <p>Oferecer soluções sustentáveis em energia solar com excelência, confiabilidade e impacto positivo nas comunidades atendidas.</p>
+      </div>
+      <div class="cartao">
+        <h3>Visão</h3>
+        <p>Ser referência em energia solar no Pará, promovendo um futuro mais limpo e acessível.</p>
+      </div>
+      <div class="cartao">
+        <h3>Valores</h3>
+        <ul>
+          <li>Comprometimento com o cliente</li>
+          <li>Sustentabilidade</li>
+          <li>Transparência</li>
+          <li>Inovação</li>
+          <li>Responsabilidade social</li>
+        </ul>
+      </div>
+      <div class="cartao">
+        <h3>Serviços</h3>
+        <ul>
+          <li>Instalação de sistemas fotovoltaicos</li>
+          <li>Manutenção preventiva e corretiva</li>
+          <li>Consultoria e dimensionamento de projetos solares</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-.logo {
-  height: 50px;
-}
+  <section class="section" id="avaliacoes">
+    <h2>O que dizem nossos clientes</h2>
+    <div class="avaliacao">
+      <p>Empresa excelente! Atendimento rápido e eficiente.</p>
+      <img src="estrelas.png" alt="5 estrelas" width="100" />
+      <span>— Carlos Almeida</span>
+    </div>
+    <div class="avaliacao">
+      <p>Instalação impecável, ótimo custo-benefício.</p>
+      <img src="estrelas.png" alt="5 estrelas" width="100" />
+      <span>— Fernanda Souza</span>
+    </div>
+    <div class="avaliacao">
+      <p>Equipe muito profissional, recomendo fortemente!</p>
+      <img src="estrelas.png" alt="5 estrelas" width="100" />
+      <span>— João Pereira</span>
+    </div>
+  </section>
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
+  <section class="section">
+    <h2>Veja nossa localização</h2>
+    <a href="https://www.google.com/maps/place/Mirante+Solar+%7C+Energia+Solar+Residencial+e+Comercial/@-1.3523506,-48.3917565,17z" class="btn-agende" target="_blank">Ver no Google Maps</a>
+  </section>
 
-nav ul li a {
-  color: #07343f;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
-}
+  <section class="section" id="contato">
+    <h2>Contato</h2>
+    <form class="form-contato">
+      <input type="text" placeholder="Seu nome" required />
+      <input type="email" placeholder="Seu e-mail" required />
+      <textarea rows="5" placeholder="Sua mensagem"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
 
-nav ul li a:hover {
-  color: #ffb900;
-}
+  <a href="https://wa.me/5598984024053" class="whatsapp">
+    <img src="whatsapp.png" alt="WhatsApp" width="40" />
+  </a>
 
-.menu-toggle {
-  display: none;
-  font-size: 28px;
-  background: none;
-  color: #07343f;
-  border: none;
-  cursor: pointer;
-}
+  <footer>
+    <p>&copy; 2025 Mirante Solar. Todos os direitos reservados.</p>
+    <p>
+      <a href="https://www.instagram.com/mirantesolar/" target="_blank">
+        <img src="instagram.png" alt="Instagram" width="24" />
+      </a>
+      <a href="https://www.facebook.com/MiranteSolar" target="_blank">
+        <img src="facebook.png" alt="Facebook" width="24" />
+      </a>
+    </p>
+  </footer>
 
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  nav ul.menu {
-    display: none;
-    flex-direction: column;
-    background-color: white;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    width: 200px;
-    border: 1px solid #07343f10;
-    border-radius: 10px;
-  }
-
-  nav ul.menu.active {
-    display: flex;
-  }
-
-  nav ul.menu li {
-    padding: 10px 0;
-    text-align: right;
-    padding-right: 20px;
-  }
-}
-
-.hero-banner {
-  position: relative;
-  margin-top: 70px;
-}
-
-.banner-img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-bottom: 4px solid #ffb900;
-}
-
-.hero-overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  background-color: rgba(255, 185, 0, 0.8);
-  color: #07343f;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-}
-
-.hero-overlay h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-  font-weight: bold;
-}
-
-.hero-overlay p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-
-.btn-agende {
-  display: inline-block;
-  background-color: #07343f;
-  color: white;
-  padding: 12px 24px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-
-.btn-agende:hover {
-  background-color: #05566c;
-}
-
-.section {
-  padding: 60px 20px;
-  max-width: 1100px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.section h2 {
-  font-size: 2rem;
-  color: #07343f;
-  margin-bottom: 20px;
-  position: relative;
-  display: inline-block;
-}
-
-.section h2::after {
-  content: '';
-  width: 50px;
-  height: 4px;
-  background-color: #ffb900;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: -10px;
-}
-
-.socios-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 15px;
-  margin-top: 20px;
-}
-
-.socios-container img {
-  width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.frase-socios {
-  font-style: italic;
-  font-size: 1.2rem;
-  margin-top: 20px;
-  color: #07343f;
-}
-
-.info-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  margin-top: 30px;
-}
-
-.info-cards .card {
-  background-color: #ffffff;
-  border-left: 6px solid #ffb900;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  text-align: left;
-}
-
-.info-cards .card h3 {
-  color: #07343f;
-  margin-bottom: 10px;
-}
-
-.info-cards .card ul {
-  padding-left: 20px;
-  color: #07343f;
-}
-
-.servicos {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  margin-top: 30px;
-}
-
-.servico-card {
-  background-color: #ffb90010;
-  border: 2px solid #ffb900;
-  border-radius: 12px;
-  padding: 20px;
-  width: 250px;
-  text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-.servico-card h3 {
-  color: #07343f;
-  margin-top: 10px;
-}
-
-.avaliacao {
-  background-color: #ffffff;
-  padding: 20px;
-  margin-bottom: 15px;
-  border-radius: 10px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-  text-align: left;
-  position: relative;
-}
-
-.avaliacao img {
-  width: 100px;
-  margin-bottom: 10px;
-}
-
-.avaliacao span {
-  display: block;
-  font-weight: bold;
-  margin-top: 10px;
-  color: #07343f;
-}
-
-.galeria {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 15px;
-  margin-top: 30px;
-}
-
-.galeria img {
-  width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.map-btn {
-  display: inline-block;
-  background-color: #ffb900;
-  color: #07343f;
-  padding: 10px 20px;
-  margin-top: 15px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-
-.map-btn:hover {
-  background-color: #e0a200;
-}
-
-.form-contato {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.form-contato input,
-.form-contato textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 1rem;
-}
-
-.form-contato button {
-  background-color: #07343f;
-  color: white;
-  border: none;
-  padding: 12px;
-  font-size: 1rem;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.form-contato button:hover {
-  background-color: #05566c;
-}
-
-.whatsapp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1000;
-}
-
-.whatsapp img {
-  width: 60px;
-  height: 60px;
-}
-
-.social-icons {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-.social-icons img {
-  width: 32px;
-  height: 32px;
-}
-
-footer {
-  background-color: #07343f;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-}
+  <script>
+    const toggle = document.querySelector(".menu-toggle");
+    const menu = document.querySelector(".menu");
+    toggle.addEventListener("click", () => menu.classList.toggle("active"));
+  </script>
+</body>
+</html>
