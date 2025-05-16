@@ -18,6 +18,18 @@ header {
 .logo {
   max-height: 60px;
 }
+.banner {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 
 nav ul {
   list-style: none;
