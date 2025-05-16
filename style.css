@@ -1,190 +1,101 @@
-:root {
-  --amarelo: #ffb900;
-  --verde-escuro: #07343f;
-  --branco: #fdffff;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mirante Solar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Mirante Solar">
+    <nav>
+      <a href="#sobre">Sobre</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#galeria">Instalações</a>
+      <a href="#avaliacoes">Avaliações</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+  
+<div class="banner-container">
+  <img src="banner.jpg" alt="Banner Mirante Solar" class="banner">
+  <div class="banner-overlay">
+    <h1>Transforme a luz do sol em economia e sustentabilidade.</h1>
+    <p>Soluções completas em energia solar para sua casa ou empresa.</p>
+    <a href="#contato" class="btn-agendar">Agende uma Visita</a>
+  </div>
+</div>
 
-body {
-  font-family: 'Segoe UI', sans-serif;
-  margin: 0;
-  background-color: var(--branco);
-  color: #333;
-}
+  <section class="section" id="sobre">
+    <h2 class="title">Sobre a Mirante Solar</h2>
+    <p>Somos uma empresa especializada em energia solar, atendendo Belém, Ananindeua, Marituba e Benevides. Trabalhamos com instalação e manutenção de sistemas fotovoltaicos.</p>
+    <p><strong>Missão:</strong> Promover energia limpa e acessível com qualidade e compromisso.</p>
+    <p><strong>Visão:</strong> Ser referência em soluções sustentáveis na região norte.</p>
+    <p><strong>Valores:</strong> Sustentabilidade, Inovação, Comprometimento e Transparência.</p>
+    <div class="team">
+      <img src="socios.jpeg">
+      <img src="socios2.jpeg">
+      <img src="socios3.jpg">
+      <img src="socios4.jpg">
+      <img src="socios5">
+      <img src="socios6.jpg">
+    </div>
+    <p>Conheça a equipe que está transformando o futuro com energia solar!</p>
+  </section>
 
-header {
-  background-color: var(--branco);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px 30px;
-  color: var(--verde-escuro);
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
+  <section class="section" id="servicos">
+    <h2 class="title">Serviços</h2>
+    <p>Instalação de sistemas solares fotovoltaicos</p>
+    <p>Manutenção e suporte técnico</p>
+    <p>Consultoria e projeto personalizado</p>
+  </section>
 
-header img {
-  height: 60px;
-}
+  <section class="section" id="galeria">
+    <h2 class="title">Nossas Instalações</h2>
+    <div class="gallery">
+      <img src="inst1.jpg">
+      <img src="inst2.jpg">
+      <img src="inst3.jpg">
+      <img src="inst4.jpg">
+      <img src="inst5.jpg">
+      <img src="inst6.jpg">
+    </div>
+  </section>
 
-nav a {
-  margin: 0 12px;
-  text-decoration: none;
-  color: var(--verde-escuro);
-  font-weight: bold;
-  transition: color 0.3s;
-}
+  <section class="section" id="avaliacoes">
+    <h2 class="title">Avaliações dos Clientes</h2>
+    <p><strong>João Pereira</strong>: Atendimento excelente e rápida instalação.</p>
+    <div class="rating"><img src="estrelas.png" alt="5 estrelas"></div>
+    <p><strong>Maria Souza</strong>: Super recomendo! Equipe muito profissional.</p>
+    <div class="rating"><img src="estrelas.png" alt="5 estrelas"></div>
+    <p><strong>Fernando Lima</strong>: Resolvi tudo com facilidade e agilidade!</p>
+    <div class="rating"><img src="estrelas.png" alt="5 estrelas"></div>
+  </section>
 
-nav a:hover {
-  color: var(--amarelo);
-}
+  <section class="section" id="contato">
+    <h2 class="title">Fale Conosco</h2>
+    <p>Telefone: (91) 98402-4053</p>
+    <p>Email: mirantesolar2023@gmail.com</p>
+    <p>Endereço: <a href="https://g.co/kgs/nBQAJjS" target="_blank">Tv. We Sessenta e Oito, 1372 - Cidade Nova, Ananindeua - PA</a></p>
+    <form>
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu e-mail" required>
+      <textarea placeholder="Mensagem" required></textarea>
+      <button type="submit">Enviar Mensagem</button>
+    </form>
+  </section>
 
+  <a href="https://wa.me/5591984024053" class="whatsapp-button">
+    <img src="whatsapp.png" alt="WhatsApp">
+  </a>
 
-.banner {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-.section {
-  padding: 60px 30px;
-  text-align: center;
-}
-
-.title {
-  color: var(--verde-escuro);
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.team, .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-}
-
-.team img, .gallery img {
-  width: 200px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.rating img {
-  width: 120px;
-  margin-bottom: 20px;
-}
-
-form {
-  max-width: 500px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-form input, form textarea {
-  padding: 10px;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-}
-
-form button {
-  background-color: var(--amarelo);
-  border: none;
-  padding: 12px;
-  font-size: 1rem;
-  font-weight: bold;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-form button:hover {
-  background-color: #e0a800;
-}
-
-footer {
-  background-color: var(--verde-escuro);
-  color: var(--branco);
-  text-align: center;
-  padding: 20px;
-}
-
-.social-icons img {
-  width: 30px;
-  margin: 0 10px;
-}
-
-.whatsapp-button {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 999;
-}
-
-.whatsapp-button img {
-  width: 60px;
-  height: 60px;
-}
-
-/* Responsivo */
-@media (max-width: 600px) {
-  .team img, .gallery img {
-    width: 100%;
-    max-width: 90%;
-  }
-
-  nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  nav a {
-    margin: 5px 0;
-  }
- .banner-overlay {
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.85);
-  color: var(--verde-escuro);
-  padding: 20px 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  max-width: 90%;
-}
-
-.banner-overlay h1 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-.banner-overlay p {
-  margin-bottom: 15px;
-  font-size: 1rem;
-}
-
-.btn-agendar {
-  display: inline-block;
-  background-color: var(--amarelo);
-  color: var(--verde-escuro);
-  padding: 12px 20px;
-  border-radius: 6px;
-  font-weight: bold;
-  text-decoration: none;
-  transition: background 0.3s;
-}
-
-.btn-agendar:hover {
-  background-color: #e0a800;
-}
-  .banner-container {
-  position: relative;
-  width: 100%;
-}
-
-
-}
+  <footer>
+    <p>&copy; 2025 Mirante Solar. Todos os direitos reservados.</p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/mirantesolar/" target="_blank"><img src="instagram.png" alt="Instagram"></a>
+      <a href="https://www.facebook.com/MiranteSolar" target="_blank"><img src="facebook.png" alt="Facebook"></a>
+    </div>
+  </footer>
+</body>
+</html>
