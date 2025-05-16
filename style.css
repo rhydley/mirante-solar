@@ -1,307 +1,139 @@
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+:root {
+  --amarelo: #ffb900;
+  --verde-escuro: #07343f;
+  --branco: #fdffff;
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #07343f;
-  background-color: #fdffff;
-  line-height: 1.6;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background-color: var(--branco);
+  color: #333;
 }
 
 header {
-  background-color: #ffffff;
-  color: #07343f;
-  padding: 10px 20px;
-  position: fixed;
-  width: 100%;
-  top: 0;
-  z-index: 999;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.header-content {
+  background-color: var(--verde-escuro);
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  color: var(--branco);
 }
 
-.logo {
+header img {
   height: 50px;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-nav ul li a {
-  color: #07343f;
+nav a {
+  margin: 0 10px;
   text-decoration: none;
+  color: var(--branco);
   font-weight: bold;
-  transition: color 0.3s;
 }
 
-nav ul li a:hover {
-  color: #ffb900;
-}
-
-.menu-toggle {
-  display: none;
-  font-size: 28px;
-  background: none;
-  color: #07343f;
-  border: none;
-  cursor: pointer;
-}
-
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  nav ul.menu {
-    display: none;
-    flex-direction: column;
-    background-color: #ffffff;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    width: 200px;
-    border: 1px solid #07343f20;
-    border-radius: 10px;
-  }
-
-  nav ul.menu.active {
-    display: flex;
-  }
-
-  nav ul.menu li {
-    padding: 10px 0;
-    text-align: right;
-    padding-right: 20px;
-  }
-}
-
-.hero-banner {
-  position: relative;
-  margin-top: 70px;
-}
-
-.banner-img {
+.banner {
   width: 100%;
   height: auto;
-  display: block;
-}
-
-.hero-overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #07343f;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 30px;
-  border-radius: 10px;
-  max-width: 90%;
-}
-
-.hero-overlay h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
-  color: #ffb900;
-}
-
-.hero-overlay p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-
-.btn-agende {
-  display: inline-block;
-  background-color: #ffb900;
-  color: #07343f;
-  padding: 12px 24px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-
-.btn-agende:hover {
-  background-color: #e0a200;
 }
 
 .section {
-  padding: 60px 20px;
-  max-width: 1000px;
-  margin: 0 auto;
+  padding: 60px 30px;
   text-align: center;
 }
 
-.section h2 {
+.title {
+  color: var(--verde-escuro);
   font-size: 2rem;
-  color: #07343f;
   margin-bottom: 20px;
 }
 
-.sobre-nos-imgs {
+.team, .gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
+}
+
+.team img, .gallery img {
+  width: 200px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.rating img {
+  width: 120px;
   margin-bottom: 20px;
 }
 
-.sobre-nos-imgs img {
-  width: 220px;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.frase-socios {
-  font-style: italic;
-  margin-bottom: 30px;
-  font-size: 1.2rem;
-  text-align: center;
-}
-
-.info-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
-  text-align: center;
-}
-
-.info-cards div {
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
-
-ul {
-  padding-left: 20px;
-  margin-bottom: 30px;
-  text-align: left;
-}
-
-.galeria {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 15px;
-}
-
-.galeria img {
-  width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.form-contato {
+form {
+  max-width: 500px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
 }
 
-.form-contato input,
-.form-contato textarea {
+form input, form textarea {
   padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
   font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
 }
 
-.form-contato button {
-  background-color: #07343f;
-  color: white;
+form button {
+  background-color: var(--amarelo);
   border: none;
   padding: 12px;
   font-size: 1rem;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.form-contato button:hover {
-  background-color: #05566c;
-}
-
-.avaliacao {
-  background-color: #f1f1f1;
-  padding: 20px;
-  margin-bottom: 15px;
-  border-radius: 10px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.avaliacao img {
-  width: 100px;
-  margin-bottom: 10px;
-}
-
-.avaliacao span {
-  display: block;
   font-weight: bold;
-  margin-top: 10px;
-  color: #07343f;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
-.whatsapp {
+form button:hover {
+  background-color: #e0a800;
+}
+
+footer {
+  background-color: var(--verde-escuro);
+  color: var(--branco);
+  text-align: center;
+  padding: 20px;
+}
+
+.social-icons img {
+  width: 30px;
+  margin: 0 10px;
+}
+
+.whatsapp-button {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 1000;
+  z-index: 999;
 }
 
-.whatsapp img {
+.whatsapp-button img {
   width: 60px;
   height: 60px;
 }
 
-.social-icons {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
+/* Responsivo */
+@media (max-width: 600px) {
+  .team img, .gallery img {
+    width: 100%;
+    max-width: 90%;
+  }
 
-.social-icons a img {
-  width: 32px;
-  height: 32px;
-  transition: transform 0.3s;
-}
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.social-icons a img:hover {
-  transform: scale(1.1);
-}
-
-footer {
-  background-color: #07343f;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-}
-
-.map-link {
-  display: inline-block;
-  background-color: #ffb900;
-  color: #07343f;
-  padding: 10px 20px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  margin-top: 20px;
-  transition: background-color 0.3s;
-}
-
-.map-link:hover {
-  background-color: #e0a200;
+  nav a {
+    margin: 5px 0;
+  }
 }
