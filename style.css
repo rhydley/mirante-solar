@@ -181,5 +181,11 @@ footer {
 .btn-agendar:hover {
   background-color: #e0a800;
 }
+  .banner-container {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
 
 }
