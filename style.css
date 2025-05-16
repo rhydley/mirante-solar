@@ -12,23 +12,24 @@ body {
 }
 
 header {
-  background-color: var(--verde-escuro);
+  background-color: var(--branco);
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px 30px;
-  color: var(--branco);
-}
-
-header img {
-  height: 50px;
+  color: var(--verde-escuro);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 nav a {
   margin: 0 10px;
   text-decoration: none;
-  color: var(--branco);
+  color: var(--verde-escuro);
   font-weight: bold;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: var(--amarelo);
 }
 
 .banner {
