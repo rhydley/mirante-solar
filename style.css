@@ -7,16 +7,24 @@ body {
 }
 
 header {
-  background-color: #07343f;
-  padding: 1rem;
+  background-color: #fdffff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.header-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .logo {
-  max-height: 60px;
+  height: 60px;
 }
 .banner {
   width: 100%;
@@ -28,6 +36,7 @@ header {
   width: 100%;
   height: auto;
   display: block;
+  border-bottom: 4px solid #ffb900;
 }
 
 
@@ -40,10 +49,18 @@ nav ul {
 }
 
 nav a {
-  color: #fdffff;
+  color: #07343f;
   text-decoration: none;
   font-weight: bold;
+  padding: 0.5rem 0.8rem;
+  transition: background 0.3s;
 }
+nav a:hover {
+  background-color: #ffb900;
+  color: #07343f;
+  border-radius: 5px;
+}
+
 
 .hero {
   background-color: #ffb900;
