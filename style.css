@@ -1,3 +1,9 @@
+:root {
+  --amarelo: #ffb900;
+  --verde-escuro: #07343f;
+  --branco: #fdffff;
+}
+
 .banner-container {
   position: relative;
   width: 100%;
