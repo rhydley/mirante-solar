@@ -41,8 +41,8 @@ nav a:hover {
 .banner {
   width: 100%;
   height: auto;
+  display: block;
 }
-
 .section {
   padding: 60px 30px;
   text-align: center;
@@ -143,18 +143,18 @@ footer {
   nav a {
     margin: 5px 0;
   }
-  .banner-overlay {
+ .banner-overlay {
   position: absolute;
-  top: 60%;
+  bottom: 30px;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
   text-align: center;
+  background-color: rgba(255, 255, 255, 0.85);
   color: var(--verde-escuro);
-  background-color: rgba(255, 255, 255, 0.8);
   padding: 20px 30px;
   border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   max-width: 90%;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 .banner-overlay h1 {
@@ -184,7 +184,6 @@ footer {
   .banner-container {
   position: relative;
   width: 100%;
-  height: auto;
 }
 
 
