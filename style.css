@@ -14,6 +14,7 @@ header {
   top: 0;
   z-index: 1000;
 }
+
 .header-content {
   display: flex;
   align-items: center;
@@ -26,19 +27,6 @@ header {
 .logo {
   height: 60px;
 }
-.banner {
-  width: 100%;
-  max-width: 100%;
-  overflow: hidden;
-  margin-bottom: 2rem;
-}
-.banner img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-bottom: 4px solid #ffb900;
-}
-
 
 nav ul {
   list-style: none;
@@ -55,12 +43,26 @@ nav a {
   padding: 0.5rem 0.8rem;
   transition: background 0.3s;
 }
+
 nav a:hover {
   background-color: #ffb900;
   color: #07343f;
   border-radius: 5px;
 }
 
+.banner {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-bottom: 4px solid #ffb900;
+}
 
 .hero {
   background-color: #ffb900;
@@ -121,6 +123,26 @@ footer {
   color: #fdffff;
   text-align: center;
   padding: 1rem;
+  margin-top: 3rem;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  color: white;
+  font-size: 2rem;
+  padding: 0.6rem 1rem;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+  z-index: 1001;
+}
+
+.whatsapp:hover {
+  transform: scale(1.1);
 }
 
 @media (max-width: 600px) {
