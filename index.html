@@ -2,18 +2,20 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mirante Solar</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mirante Solar - Energia Solar</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <div class="header-content">
-      <img src="logo.png" alt="Logo Mirante Solar" class="logo" />
+      <img src="logo.png" alt="Mirante Solar Logo" class="logo" />
       <nav>
-        <button class="menu-toggle">☰</button>
-        <ul class="menu">
-          <li><a href="#sobre">Sobre</a></li>
+        <ul>
+          <li><a href="#home">Início</a></li>
+          <li><a href="#quem-somos">Quem Somos</a></li>
+          <li><a href="#instalacoes">Instalações</a></li>
+          <li><a href="#missao-visao-valores">Missão & Visão</a></li>
           <li><a href="#servicos">Serviços</a></li>
           <li><a href="#avaliacoes">Avaliações</a></li>
           <li><a href="#contato">Contato</a></li>
@@ -22,111 +24,125 @@
     </div>
   </header>
 
-  <section class="hero-banner">
-    <img src="banner.jpg" alt="Banner Mirante Solar" class="banner-img" />
-    <div class="hero-overlay">
-      <h1>ENERGIA SOLAR AO SEU ALCANCE</h1>
-      <p>Atendendo Belém, Ananindeua, Marituba e Benevides com soluções completas em energia solar.</p>
-      <a href="https://wa.me/5598984024053" class="btn-agende">Agende uma visita</a>
-    </div>
-  </section>
-
-  <section class="section" id="sobre">
-    <h2>Quem Somos</h2>
-    <div class="galeria">
-      <img src="socios.jpeg" alt="Sócios da empresa" />
-      <img src="socios2.jpeg" alt="Equipe Mirante Solar" />
-      <img src="socios3.jpg" alt="Colaboradores" />
-      <img src="socios4.jpg" alt="Trabalho em equipe" />
-    </div>
-    <p class="frase-socios">Comprometidos com um futuro mais limpo e sustentável!</p>
-  </section>
-
-  <section class="section" id="institucional">
-    <div class="cartoes">
-      <div class="cartao">
-        <h3>Missão</h3>
-        <p>Oferecer soluções sustentáveis em energia solar com excelência, confiabilidade e impacto positivo nas comunidades atendidas.</p>
+  <main>
+    <section class="hero-banner" id="home">
+      <img src="banner.jpg" alt="Banner Mirante Solar" class="banner-img" />
+      <div class="hero-overlay">
+        <h1>ENERGIA SOLAR AO SEU ALCANCE</h1>
+        <p>Atendendo Belém, Ananindeua, Marituba e Benevides com soluções completas em energia solar.</p>
+        <a href="#contato" class="btn-agende">Agende uma avaliação</a>
       </div>
-      <div class="cartao">
-        <h3>Visão</h3>
-        <p>Ser referência em energia solar no Pará, promovendo um futuro mais limpo e acessível.</p>
+    </section>
+
+    <section class="section quem-somos" id="quem-somos">
+      <h2>Quem Somos</h2>
+      <div class="frase-socios">
+        "Comprometidos com um futuro mais limpo e sustentável!"
       </div>
-      <div class="cartao">
-        <h3>Valores</h3>
-        <ul>
-          <li>Comprometimento com o cliente</li>
-          <li>Sustentabilidade</li>
-          <li>Transparência</li>
-          <li>Inovação</li>
-          <li>Responsabilidade social</li>
-        </ul>
+      <div class="quem-somos-fotos">
+        <img src="socios.jpeg" alt="Sócios" />
+        <img src="socios2.jpeg" alt="Sócios 2" />
+        <img src="socios3.jpg" alt="Sócios 3" />
+        <img src="socios4.jpg" alt="Sócios 4" />
+        <img src="socios5.jpeg" alt="Sócios 5" />
+        <img src="socios6.jpeg" alt="Sócios 6" />
       </div>
-      <div class="cartao">
-        <h3>Serviços</h3>
-        <ul>
-          <li>Instalação de sistemas fotovoltaicos</li>
-          <li>Manutenção preventiva e corretiva</li>
-          <li>Consultoria e dimensionamento de projetos solares</li>
-        </ul>
+    </section>
+
+    <section class="section instalacoes" id="instalacoes">
+      <h2>Instalações</h2>
+      <div class="galeria">
+        <img src="inst1.jpeg" alt="Instalação 1" />
+        <img src="inst2.jpeg" alt="Instalação 2" />
+        <img src="inst3.jpeg" alt="Instalação 3" />
+        <img src="inst4.jpeg" alt="Instalação 4" />
+        <img src="inst5.jpeg" alt="Instalação 5" />
+        <img src="inst6.jpeg" alt="Instalação 6" />
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section" id="avaliacoes">
-    <h2>O que dizem nossos clientes</h2>
-    <div class="avaliacao">
-      <p>Empresa excelente! Atendimento rápido e eficiente.</p>
-      <img src="estrelas.png" alt="5 estrelas" width="100" />
-      <span>— Carlos Almeida</span>
-    </div>
-    <div class="avaliacao">
-      <p>Instalação impecável, ótimo custo-benefício.</p>
-      <img src="estrelas.png" alt="5 estrelas" width="100" />
-      <span>— Fernanda Souza</span>
-    </div>
-    <div class="avaliacao">
-      <p>Equipe muito profissional, recomendo fortemente!</p>
-      <img src="estrelas.png" alt="5 estrelas" width="100" />
-      <span>— João Pereira</span>
-    </div>
-  </section>
+    <section class="section miss-vis-valores" id="missao-visao-valores">
+      <h2>Missão, Visão e Valores</h2>
+      <div class="cards-mvv">
+        <div class="card-mvv">
+          <div class="icon">🎯</div>
+          <h3>Missão</h3>
+          <p>Oferecer soluções sustentáveis em energia solar com excelência, confiabilidade e impacto positivo nas comunidades atendidas.</p>
+        </div>
+        <div class="card-mvv">
+          <div class="icon">🚀</div>
+          <h3>Visão</h3>
+          <p>Ser referência em energia solar no Pará, promovendo um futuro mais limpo e acessível.</p>
+        </div>
+        <div class="card-mvv">
+          <div class="icon">🤝</div>
+          <h3>Valores</h3>
+          <ul>
+            <li>Comprometimento com o cliente</li>
+            <li>Sustentabilidade</li>
+            <li>Transparência</li>
+            <li>Inovação</li>
+            <li>Responsabilidade social</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-  <section class="section">
-    <h2>Veja nossa localização</h2>
-    <a href="https://www.google.com/maps/place/Mirante+Solar+%7C+Energia+Solar+Residencial+e+Comercial/@-1.3523506,-48.3917565,17z" class="btn-agende" target="_blank">Ver no Google Maps</a>
-  </section>
+    <section class="section servicos" id="servicos">
+      <h2>Serviços</h2>
+      <ul>
+        <li>Instalação de sistemas fotovoltaicos</li>
+        <li>Manutenção preventiva e corretiva</li>
+        <li>Consultoria e dimensionamento de projetos solares</li>
+      </ul>
+    </section>
 
-  <section class="section" id="contato">
-    <h2>Contato</h2>
-    <form class="form-contato">
-      <input type="text" placeholder="Seu nome" required />
-      <input type="email" placeholder="Seu e-mail" required />
-      <textarea rows="5" placeholder="Sua mensagem"></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
+    <section class="section avaliacoes" id="avaliacoes">
+      <h2>O que dizem nossos clientes</h2>
+      <div class="avaliacao">
+        <img src="estrelas.png" alt="5 estrelas" class="estrelas" />
+        <p>Serviço excelente, equipe muito profissional e rápida. Recomendo demais!</p>
+        <span>- Ana Clara</span>
+      </div>
+      <div class="avaliacao">
+        <img src="estrelas.png" alt="5 estrelas" class="estrelas" />
+        <p>Ótima relação custo-benefício e atendimento impecável. Muito satisfeito.</p>
+        <span>- João Pedro</span>
+      </div>
+      <div class="avaliacao">
+        <img src="estrelas.png" alt="5 estrelas" class="estrelas" />
+        <p>Equipe capacitada e comprometida. Superou minhas expectativas!</p>
+        <span>- Larissa Menezes</span>
+      </div>
+    </section>
 
-  <a href="https://wa.me/5598984024053" class="whatsapp">
-    <img src="whatsapp.png" alt="WhatsApp" width="40" />
+    <section class="section localizacao" id="localizacao">
+      <h2>Localização</h2>
+      <p>Venha nos visitar:</p>
+      <a href="https://www.google.com/maps/place/Mirante+Solar+%7C+Energia+Solar+Residencial+e+Comercial/@-1.3523506,-48.3917565,17z/data=!3m1!4b1!4m6!3m5!1s0x92a45f000d490ded:0x628c632337ddbc63!8m2!3d-1.3523506!4d-48.3917565!16s%2Fg%2F11w88kb92z?entry=ttu&g_ep=EgoyMDI1MDUxMy4xIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" class="btn-maps">Ver no Google Maps</a>
+    </section>
+
+    <section class="section contato" id="contato">
+      <h2>Contato</h2>
+      <p>Telefone: <a href="tel:+55984024053">98402-4053</a></p>
+      <p>Email: <a href="mailto:mirantesolar2023@gmail.com">mirantesolar2023@gmail.com</a></p>
+      <div class="redes-sociais">
+        <a href="https://www.instagram.com/mirantesolar/" target="_blank" rel="noopener">
+          <img src="instagram.png" alt="Instagram Mirante Solar" />
+        </a>
+        <a href="https://www.facebook.com/MiranteSolar" target="_blank" rel="noopener">
+          <img src="facebook.png" alt="Facebook Mirante Solar" />
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <a href="https://wa.me/55984024053" target="_blank" rel="noopener" class="whatsapp">
+    <img src="whatsapp.png" alt="WhatsApp" />
   </a>
 
   <footer>
-    <p>&copy; 2025 Mirante Solar. Todos os direitos reservados.</p>
-    <p>
-      <a href="https://www.instagram.com/mirantesolar/" target="_blank">
-        <img src="instagram.png" alt="Instagram" width="24" />
-      </a>
-      <a href="https://www.facebook.com/MiranteSolar" target="_blank">
-        <img src="facebook.png" alt="Facebook" width="24" />
-      </a>
-    </p>
+    <p>© 2025 Mirante Solar - Todos os direitos reservados</p>
   </footer>
-
-  <script>
-    const toggle = document.querySelector(".menu-toggle");
-    const menu = document.querySelector(".menu");
-    toggle.addEventListener("click", () => menu.classList.toggle("active"));
-  </script>
 </body>
 </html>
