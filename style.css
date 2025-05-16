@@ -20,15 +20,13 @@ header {
   width: 100%;
   top: 0;
   z-index: 999;
-  text-align: center;
 }
 
 .header-content {
   display: flex;
-  justify-content: center;
+  justify-content: center;  /* CENTRALIZADO */
   align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
+  gap: 40px;
 }
 
 .logo {
@@ -106,16 +104,19 @@ nav ul li a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.4);
+  color: #07343f; /* Menos escuro, sem fundo preto */
+  background-color: rgba(255, 185, 0, 0.85); /* fundo amarelo com transparência */
   padding: 30px;
   border-radius: 10px;
+  max-width: 90%;
+  box-shadow: 0 0 20px rgba(255, 185, 0, 0.8);
 }
 
 .hero-overlay h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
-  color: #ffb900;
+  color: #07343f;
+  font-weight: 900;
 }
 
 .hero-overlay p {
@@ -125,17 +126,19 @@ nav ul li a:hover {
 
 .btn-agende {
   display: inline-block;
-  background-color: #ffb900;
-  color: #07343f;
+  background-color: #07343f;
+  color: #ffb900;
   padding: 12px 24px;
   border-radius: 30px;
   text-decoration: none;
   font-weight: bold;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.3s ease;
+  box-shadow: 0 3px 6px rgba(7, 52, 63, 0.5);
 }
 
 .btn-agende:hover {
-  background-color: #e0a200;
+  background-color: #05566c;
+  transform: scale(1.05);
 }
 
 .section {
@@ -145,164 +148,4 @@ nav ul li a:hover {
 }
 
 .section h2 {
-  font-size: 2rem;
-  color: #07343f;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.socios {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
-  margin-bottom: 20px;
-}
-
-.socios img {
-  width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.frase-socios {
-  font-style: italic;
-  margin-bottom: 30px;
-  font-size: 1.2rem;
-  text-align: center;
-}
-
-.instalacoes {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 15px;
-  margin-bottom: 30px;
-}
-
-.instalacoes img {
-  width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.mvv {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  margin-top: 40px;
-}
-
-.mvv-card {
-  background-color: #ffb900;
-  color: #07343f;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.mvv-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-}
-
-.mvv-card ul {
-  list-style: none;
-  padding: 0;
-}
-
-.mvv-card ul li::before {
-  content: "✓ ";
-  color: #07343f;
-  font-weight: bold;
-}
-
-ul {
-  padding-left: 20px;
-  margin-bottom: 30px;
-}
-
-.galeria {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 15px;
-}
-
-.galeria img {
-  width: 100%;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.form-contato {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.form-contato input,
-.form-contato textarea {
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 1rem;
-}
-
-.form-contato button {
-  background-color: #07343f;
-  color: white;
-  border: none;
-  padding: 12px;
-  font-size: 1rem;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.form-contato button:hover {
-  background-color: #05566c;
-}
-
-.avaliacao {
-  background-color: #f1f1f1;
-  padding: 20px;
-  margin-bottom: 15px;
-  border-radius: 10px;
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-}
-
-.avaliacao span {
-  display: block;
-  font-weight: bold;
-  margin-top: 10px;
-  color: #07343f;
-}
-
-.whatsapp {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: transparent;
-  padding: 0;
-  border-radius: 50%;
-  font-size: 24px;
-  text-decoration: none;
-  z-index: 1000;
-  transition: transform 0.3s ease;
-}
-
-.whatsapp img {
-  width: 60px;
-  height: 60px;
-}
-
-.whatsapp:hover {
-  transform: scale(1.1);
-}
-
-footer {
-  background-color: #07343f;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: 40px;
-}
+  font
