@@ -1,93 +1,77 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mirante Solar</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header>
     <div class="header-content">
-      <img src="logo.png" alt="Logo Mirante Solar" class="logo" />
+      <img src="logo.png" alt="Logo Mirante Solar" class="logo">
+      <button class="menu-toggle">☰</button>
       <nav>
-        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
         <ul class="menu">
-          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#sobre">Quem Somos</a></li>
           <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#avaliacoes">Clientes</a></li>
+          <li><a href="#avaliacoes">Avaliações</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <section class="hero-banner">
-    <img src="banner.jpg" alt="Banner" class="banner-img">
+  <section id="inicio" class="hero-banner">
+    <img src="banner.jpg" alt="Banner principal" class="banner-img">
     <div class="hero-overlay">
-      <h1>Energia Solar ao Seu Alcance</h1>
+      <h1>ENERGIA SOLAR AO SEU ALCANCE</h1>
       <p>Atendendo Belém, Ananindeua, Marituba e Benevides com soluções completas em energia solar.</p>
-      <a href="#contato" class="btn-agende">Agende uma Visita</a>
+      <a href="https://wa.me/5598984024053" class="btn-agende">Agende agora</a>
     </div>
   </section>
 
-  <section class="section" id="sobre">
+  <section id="sobre" class="section">
     <h2>Quem Somos</h2>
-    <img src="socios.jpeg" alt="Sócios Mirante Solar" class="socios">
-    <img src="socios2.jpeg" alt="Equipe Mirante Solar" class="socios">
-    <img src="socios3.jpeg" alt="Equipe Mirante Solar" class="socios">
-    <p class="frase-socios">Transformando energia solar em economia e sustentabilidade para o seu lar.</p>
-    <div class="info-blocos">
-      <div class="bloco">
-        <span class="material-symbols-outlined">flag</span>
-        <h3>Missão</h3>
-        <p>Oferecer soluções sustentáveis em energia solar com excelência, confiabilidade e impacto positivo nas comunidades atendidas.</p>
-      </div>
-      <div class="bloco">
-        <span class="material-symbols-outlined">visibility</span>
-        <h3>Visão</h3>
-        <p>Ser referência em energia solar no Pará, promovendo um futuro mais limpo e acessível.</p>
-      </div>
-      <div class="bloco">
-        <span class="material-symbols-outlined">verified</span>
-        <h3>Valores</h3>
-        <ul>
-          <li>Comprometimento com o cliente</li>
-          <li>Sustentabilidade</li>
-          <li>Transparência</li>
-          <li>Inovação</li>
-          <li>Responsabilidade social</li>
-        </ul>
-      </div>
+    <div class="centralizado">
+      <img src="socios.jpg" alt="Sócios da empresa" class="socios">
+      <img src="socios2.jpeg" alt="Equipe Mirante Solar" class="socios">
+      <img src="socios3.jpeg" alt="Equipe técnica" class="socios">
+      <p class="frase-socios">Comprometidos com um futuro mais limpo e sustentável!</p>
+
+      <h3>Missão</h3>
+      <p>Oferecer soluções sustentáveis em energia solar com excelência, confiabilidade e impacto positivo nas comunidades atendidas.</p>
+
+      <h3>Visão</h3>
+      <p>Ser referência em energia solar no Pará, promovendo um futuro mais limpo e acessível.</p>
+
+      <h3>Valores</h3>
+      <ul>
+        <li>Comprometimento com o cliente</li>
+        <li>Sustentabilidade</li>
+        <li>Transparência</li>
+        <li>Inovação</li>
+        <li>Responsabilidade social</li>
+      </ul>
     </div>
   </section>
 
-  <section class="section" id="servicos">
-    <h2>Nossos Serviços</h2>
-    <div class="info-blocos">
-      <div class="bloco">
-        <span class="material-symbols-outlined">solar_power</span>
-        <h3>Instalação</h3>
-        <p>Projetos personalizados de sistemas fotovoltaicos para sua casa ou empresa.</p>
-      </div>
-      <div class="bloco">
-        <span class="material-symbols-outlined">build</span>
-        <h3>Manutenção</h3>
-        <p>Preventiva e corretiva para garantir máxima performance do seu sistema solar.</p>
-      </div>
-      <div class="bloco">
-        <span class="material-symbols-outlined">engineering</span>
-        <h3>Consultoria</h3>
-        <p>Dimensionamento e análise completa para viabilidade de projetos solares.</p>
-      </div>
+  <section id="servicos" class="section">
+    <h2>Serviços</h2>
+    <div class="centralizado">
+      <ul>
+        <li>Instalação de sistemas fotovoltaicos</li>
+        <li>Manutenção preventiva e corretiva</li>
+        <li>Consultoria e dimensionamento de projetos solares</li>
+      </ul>
     </div>
   </section>
 
   <section class="section">
-    <h2>Algumas de Nossas Instalações</h2>
+    <h2>Instalações Recentes</h2>
     <div class="galeria">
       <img src="inst1.jpeg" alt="Instalação 1">
       <img src="inst2.jpeg" alt="Instalação 2">
@@ -98,53 +82,56 @@
     </div>
   </section>
 
-  <section class="section" id="avaliacoes">
+  <section id="avaliacoes" class="section">
     <h2>O que dizem nossos clientes</h2>
     <div class="avaliacao">
-      <img src="estrelas.png" alt="5 estrelas">
-      "Serviço de qualidade e ótimo atendimento! Estou muito satisfeito com o resultado."
-      <span>– João da Silva</span>
+      <p>Excelente atendimento e instalação impecável. Super recomendo!</p>
+      <img src="estrelas.png" alt="Avaliação de 5 estrelas">
+      <span>Maria Souza</span>
     </div>
     <div class="avaliacao">
-      <img src="estrelas.png" alt="5 estrelas">
-      "Equipe atenciosa e trabalho impecável. Super recomendo a Mirante Solar!"
-      <span>– Maria Oliveira</span>
+      <p>Equipe profissional e atenciosa. Projeto entregue no prazo!</p>
+      <img src="estrelas.png" alt="Avaliação de 5 estrelas">
+      <span>João Oliveira</span>
     </div>
     <div class="avaliacao">
-      <img src="estrelas.png" alt="5 estrelas">
-      "O investimento valeu cada centavo. Já vejo diferença na conta de luz."
-      <span>– Carlos Mendes</span>
+      <p>Reduzi minha conta de luz em mais de 80%! Obrigado, Mirante Solar!</p>
+      <img src="estrelas.png" alt="Avaliação de 5 estrelas">
+      <span>Camila Fernandes</span>
     </div>
   </section>
 
-  <section class="section" id="contato">
+  <section id="contato" class="section">
     <h2>Fale Conosco</h2>
-    <form class="form-contato">
-      <input type="text" placeholder="Seu nome" required>
-      <input type="email" placeholder="Seu e-mail" required>
-      <textarea rows="5" placeholder="Sua mensagem" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-    <p>Email: mirantesolar2023@gmail.com<br>Telefone: (91) 98402-4053</p>
-    <p><a href="https://www.google.com/maps/place/Mirante+Solar+%7C+Energia+Solar+Residencial+e+Comercial/@-1.3523452,-48.3966274,17z" target="_blank">Ver localização no Google Maps</a></p>
-    <div style="margin-top: 20px; display: flex; gap: 20px; justify-content: center;">
-      <a href="https://www.instagram.com/mirantesolar/" target="_blank"><img src="instagram.png" alt="Instagram" height="32"></a>
-      <a href="https://www.facebook.com/MiranteSolar" target="_blank"><img src="facebook.png" alt="Facebook" height="32"></a>
+    <div class="centralizado">
+      <form class="form-contato">
+        <input type="text" placeholder="Nome" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Mensagem" rows="4" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+
+      <h3>Nosso Espaço Físico</h3>
+      <p><a href="https://www.google.com/maps/place/Mirante+Solar+%7C+Energia+Solar+Residencial+e+Comercial/@-1.3523452,-48.3966274,17z" target="_blank">Ver no Google Maps</a></p>
+
+      <div class="redes-sociais">
+        <a href="https://www.instagram.com/mirantesolar/" target="_blank">
+          <img src="instagram.png" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com/MiranteSolar" target="_blank">
+          <img src="facebook.png" alt="Facebook">
+        </a>
+      </div>
     </div>
   </section>
-
-  <a class="whatsapp" href="https://wa.me/5591984024053" target="_blank" title="Fale conosco no WhatsApp">
-    <img src="whatsapp.png" alt="WhatsApp" style="height: 40px; width: 40px;">
-  </a>
 
   <footer>
-    &copy; 2025 Mirante Solar. Todos os direitos reservados.
+    <p>&copy; 2025 Mirante Solar. Todos os direitos reservados.</p>
   </footer>
 
-  <script>
-    function toggleMenu() {
-      document.querySelector('nav ul.menu').classList.toggle('active');
-    }
-  </script>
+  <a href="https://wa.me/5598984024053" class="whatsapp">
+    <img src="whatsapp.png" alt="WhatsApp">
+  </a>
 </body>
+
 </html>
