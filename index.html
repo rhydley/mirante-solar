@@ -5,34 +5,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mirante Solar</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="logo.png" type="image/png" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 <body>
-<header>
-  <div class="header-content">
-    <img src="logo.png" alt="Logo Mirante Solar" class="logo" />
-    <nav>
-      <ul>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#avaliacoes">Avaliações</a></li>
-        <li><a href="#galeria">Galeria</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+  <header>
+    <div class="header-content">
+      <img src="logo.png" alt="Logo Mirante Solar" class="logo" />
+      <nav>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#avaliacoes">Avaliações</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<div class="banner">
-  <img src="banner.jpg" alt="Banner Mirante Solar" />
-</div>
-  <section class="hero">
-    <h1>Energia Solar ao Seu Alcance</h1>
-    <p>Atendendo Belém, Ananindeua, Marituba e Benevides com soluções completas em energia solar.</p>
+  <section class="hero-banner">
+    <img src="banner.jpg" alt="Banner Mirante Solar" class="banner-img" />
+    <div class="hero-overlay">
+      <h1>Energia Solar ao Seu Alcance</h1>
+      <p>Atendendo Belém, Ananindeua, Marituba e Benevides com soluções completas em energia solar.</p>
+    </div>
   </section>
 
-  <section id="sobre" class="section">
+  <section id="sobre" class="section" data-aos="fade-up">
     <h2>Quem Somos</h2>
-    <img src="socios.jpeg" alt="Sócios da empresa" class="socios" />
+    <img src="socios.jpg" alt="Sócios da empresa" class="socios" />
     <p class="frase-socios">Unindo conhecimento e propósito para transformar o seu futuro com energia limpa!</p>
     <h3>Missão</h3>
     <p>Oferecer soluções sustentáveis em energia solar com excelência, confiabilidade e impacto positivo nas comunidades atendidas.</p>
@@ -48,7 +50,7 @@
     </ul>
   </section>
 
-  <section id="servicos" class="section">
+  <section id="servicos" class="section" data-aos="fade-up">
     <h2>Serviços</h2>
     <ul>
       <li>Instalação de sistemas fotovoltaicos</li>
@@ -57,7 +59,7 @@
     </ul>
   </section>
 
-  <section id="avaliacoes" class="section">
+  <section id="avaliacoes" class="section" data-aos="fade-up">
     <h2>O que dizem nossos clientes</h2>
     <div class="avaliacao">
       <p>"Serviço impecável e atendimento excelente. Muito satisfeito com minha economia!"</p>
@@ -73,26 +75,39 @@
     </div>
   </section>
 
-  <section id="galeria" class="section">
+  <section id="galeria" class="section" data-aos="fade-up">
     <h2>Nossas Instalações</h2>
     <div class="galeria">
-      <img src="inst1.jpeg" alt="Instalação 1" />
-      <img src="inst2.jpeg" alt="Instalação 2" />
-      <img src="inst3.jpeg" alt="Instalação 3" />
-      <img src="inst4.jpeg" alt="Instalação 4" />
-      <img src="inst5.jpeg" alt="Instalação 5" />
-      <img src="inst6.jpeg" alt="Instalação 6" />
+      <img src="inst1.jpg" alt="Instalação 1" />
+      <img src="inst2.jpg" alt="Instalação 2" />
+      <img src="inst3.jpg" alt="Instalação 3" />
+      <img src="inst4.jpg" alt="Instalação 4" />
+      <img src="inst5.jpg" alt="Instalação 5" />
+      <img src="inst6.jpg" alt="Instalação 6" />
     </div>
   </section>
 
-  <section id="contato" class="section">
+  <section id="contato" class="section" data-aos="fade-up">
     <h2>Fale Conosco</h2>
+    <form action="https://formspree.io/f/xayrpkzj" method="POST" class="form-contato">
+      <input type="text" name="nome" placeholder="Seu nome" required />
+      <input type="email" name="email" placeholder="Seu email" required />
+      <textarea name="mensagem" rows="5" placeholder="Digite sua mensagem" required></textarea>
+      <button type="submit">Enviar Mensagem</button>
+    </form>
     <p><strong>Telefone:</strong> (91) 98402-4053</p>
     <p><strong>Email:</strong> mirantesolar2023@gmail.com</p>
   </section>
 
+  <a href="https://wa.me/5591984024053" class="whatsapp" target="_blank">💬</a>
+
   <footer>
     <p>&copy; 2025 Mirante Solar - Todos os direitos reservados.</p>
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
