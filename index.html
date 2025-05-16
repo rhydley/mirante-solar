@@ -11,12 +11,13 @@
       --cor-secundaria: #07343f;
       --cor-fundo: #fdffff;
     }
-    .banner-img {
+    .banner-container {
       width: 100%;
-      max-height: 320px;
-      object-fit: cover;
-      display: block;
-      margin: 0 auto;
+      height: 300px;
+      background-image: url('banner.jpg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
   </style>
 </head>
@@ -30,9 +31,7 @@
   </header>
 
   <!-- Banner -->
-  <section>
-    <img src="banner.jpg" alt="Banner da Mirante Solar" class="banner-img">
-  </section>
+  <section class="banner-container"></section>
 
   <!-- Conteúdo principal -->
   <main class="max-w-5xl mx-auto p-6">
@@ -42,4 +41,14 @@
       <strong>instalação</strong> e <strong>manutenção</strong> de sistemas de energia solar.
     </p>
     <div class="bg-white p-4 rounded shadow text-sm">
-      <p><strong>📞 Telefone:</strong> <a href
+      <p><strong>📞 Telefone:</strong> <a href="tel:+5591984024053" class="text-[--cor-primaria]"> (91) 98402-4053</a></p>
+      <p><strong>📧 E-mail:</strong> <a href="mailto:mirantesolar2023@gmail.com" class="text-[--cor-primaria]">mirantesolar2023@gmail.com</a></p>
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="bg-[--cor-secundaria] text-white text-center p-4 mt-8">
+    &copy; 2025 Mirante Solar. Todos os direitos reservados.
+  </footer>
+</body>
+</html>
