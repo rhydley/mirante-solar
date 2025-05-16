@@ -16,21 +16,27 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 30px;
+  padding: 15px 30px;
   color: var(--verde-escuro);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header img {
+  height: 60px;
 }
 
 nav a {
-  margin: 0 10px;
+  margin: 0 12px;
   text-decoration: none;
   color: var(--verde-escuro);
   font-weight: bold;
   transition: color 0.3s;
 }
+
 nav a:hover {
   color: var(--amarelo);
 }
+
 
 .banner {
   width: 100%;
