@@ -20,7 +20,7 @@ header {
   width: 100%;
   top: 0;
   z-index: 999;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .header-content {
@@ -72,7 +72,7 @@ nav ul li a:hover {
     top: 60px;
     right: 20px;
     width: 200px;
-    border: 1px solid #07343f10;
+    border: 1px solid #07343f20;
     border-radius: 10px;
   }
 
@@ -108,12 +108,13 @@ nav ul li a:hover {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 30px;
   border-radius: 10px;
+  max-width: 90%;
 }
 
 .hero-overlay h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
-  color: #07343f;
+  color: #ffb900;
 }
 
 .hero-overlay p {
@@ -149,15 +150,16 @@ nav ul li a:hover {
   margin-bottom: 20px;
 }
 
-.socios-container {
+.sobre-nos-imgs {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px;
+  margin-bottom: 20px;
 }
 
-.socios-container img {
-  max-width: 220px;
+.sobre-nos-imgs img {
+  width: 220px;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
@@ -169,11 +171,24 @@ nav ul li a:hover {
   text-align: center;
 }
 
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+
+.info-cards div {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
 ul {
   padding-left: 20px;
   margin-bottom: 30px;
   text-align: left;
-  display: inline-block;
 }
 
 .galeria {
@@ -223,11 +238,12 @@ ul {
   margin-bottom: 15px;
   border-radius: 10px;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 .avaliacao img {
-  height: 20px;
-  margin-top: 10px;
+  width: 100px;
+  margin-bottom: 10px;
 }
 
 .avaliacao span {
@@ -241,14 +257,12 @@ ul {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width: 60px;
-  height: 60px;
   z-index: 1000;
 }
 
 .whatsapp img {
-  width: 100%;
-  height: auto;
+  width: 60px;
+  height: 60px;
 }
 
 .social-icons {
@@ -261,14 +275,11 @@ ul {
 .social-icons a img {
   width: 32px;
   height: 32px;
+  transition: transform 0.3s;
 }
 
-.map-link {
-  display: inline-block;
-  margin-top: 15px;
-  font-weight: bold;
-  color: #07343f;
-  text-decoration: underline;
+.social-icons a img:hover {
+  transform: scale(1.1);
 }
 
 footer {
@@ -277,4 +288,20 @@ footer {
   text-align: center;
   padding: 20px;
   margin-top: 40px;
+}
+
+.map-link {
+  display: inline-block;
+  background-color: #ffb900;
+  color: #07343f;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.map-link:hover {
+  background-color: #e0a200;
 }
