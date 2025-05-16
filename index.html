@@ -7,82 +7,32 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     :root {
-      --cor-primaria: #FFB900;
-      --cor-secundaria: #07343F;
-      --cor-fundo: #FDFFFF;
+      --cor-primaria: #ffb900;
+      --cor-secundaria: #07343f;
+      --cor-fundo: #fdffff;
     }
   </style>
 </head>
-<body class="bg-[--cor-fundo] text-[--cor-secundaria]">
-
-  <!-- Navbar -->
-<header class="bg-[#F5F5F5] text-[--cor-secundaria] p-4 shadow">
-   <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-4">
-     <img src="logotipo mirante.png" alt="Logo da Mirante Solar" class="h-16">
-      <nav class="space-x-4">
-        <a href="#sobre" class="hover:text-[--cor-primaria]">Sobre</a>
-        <a href="#servicos" class="hover:text-[--cor-primaria]">Serviços</a>
-        <a href="#regioes" class="hover:text-[--cor-primaria]">Regiões</a>
-        <a href="#contato" class="hover:text-[--cor-primaria]">Contato</a>
-      </nav>
+<body class="bg-[--cor-fundo] text-[--cor-secundaria] font-sans">
+  <!-- Cabeçalho -->
+  <header class="bg-[#f5f5f5] text-[--cor-secundaria] p-4 shadow">
+    <div class="max-w-7xl mx-auto flex items-center space-x-4">
+      <img src="logo.png" alt="Logo da Mirante Solar" class="h-16">
+      <span class="text-2xl font-bold">Mirante Solar</span>
     </div>
   </header>
+
+  <!-- Banner -->
   <section>
-  <img src="banner.jpg" alt="Banner da Mirante Solar" class="w-full h-auto">
-</section>
-
-  <!-- Hero -->
-  <section class="text-center py-20 px-4 bg-[--cor-primaria] text-[--cor-secundaria]">
-    <h2 class="text-4xl font-bold mb-4">Energia solar para sua casa ou empresa</h2>
-    <p class="text-lg mb-6">Atendimento em Belém, Ananindeua, Marituba, Benevides e região</p>
-    <a href="#contato" class="bg-[--cor-secundaria] text-white px-6 py-3 rounded-full font-semibold hover:bg-opacity-90">Fale com a gente</a>
+    <img src="banner.jpg" alt="Banner da Mirante Solar" class="w-full h-auto">
   </section>
 
-  <!-- Sobre -->
-  <section id="sobre" class="max-w-5xl mx-auto py-16 px-4">
-    <h3 class="text-3xl font-semibold mb-6">Sobre a Mirante Solar</h3>
-    <p class="text-lg">
-      A Mirante Solar é uma empresa especializada em soluções de energia solar, oferecendo serviços de instalação e manutenção para residências, comércios e indústrias. Nosso compromisso é entregar economia, sustentabilidade e qualidade para nossos clientes na região metropolitana de Belém.
+  <!-- Conteúdo principal -->
+  <main class="max-w-5xl mx-auto p-6">
+    <h2 class="text-xl font-semibold mb-4">Energia solar com qualidade e confiança</h2>
+    <p class="mb-4">
+      Atendemos Belém, Ananindeua, Marituba, Benevides e região, oferecendo serviços completos de
+      <strong>instalação</strong> e <strong>manutenção</strong> de sistemas de energia solar.
     </p>
-  </section>
-
-  <!-- Serviços -->
-  <section id="servicos" class="bg-gray-100 py-16 px-4">
-    <div class="max-w-5xl mx-auto">
-      <h3 class="text-3xl font-semibold mb-6">Nossos Serviços</h3>
-      <ul class="grid md:grid-cols-2 gap-8 text-lg">
-        <li class="bg-white p-6 rounded-xl shadow">✅ Instalação de sistemas fotovoltaicos</li>
-        <li class="bg-white p-6 rounded-xl shadow">✅ Manutenção preventiva e corretiva</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Regiões Atendidas -->
-  <section id="regioes" class="max-w-5xl mx-auto py-16 px-4">
-    <h3 class="text-3xl font-semibold mb-6">Atendemos</h3>
-    <ul class="list-disc pl-6 text-lg">
-      <li>Belém</li>
-      <li>Ananindeua</li>
-      <li>Marituba</li>
-      <li>Benevides</li>
-      <li>e cidades vizinhas</li>
-    </ul>
-  </section>
-
-  <!-- Contato -->
-  <section id="contato" class="bg-[--cor-secundaria] text-white py-16 px-4">
-    <div class="max-w-5xl mx-auto">
-      <h3 class="text-3xl font-semibold mb-6">Fale Conosco</h3>
-      <p class="mb-2">📞 Telefone / WhatsApp: <a href="https://wa.me/5591984024053" class="underline"> (91) 98402-4053</a></p>
-      <p class="mb-6">📧 E-mail: <a href="mailto:mirantesolar2023@gmail.com" class="underline">mirantesolar2023@gmail.com</a></p>
-      <a href="https://wa.me/5591984024053" class="inline-block mt-4 bg-[--cor-primaria] text-[--cor-secundaria] px-6 py-3 rounded-full font-semibold hover:bg-opacity-90">Enviar mensagem</a>
-    </div>
-  </section>
-
-  <!-- Rodapé -->
-  <footer class="bg-[--cor-secundaria] text-white text-center py-6">
-    <p>&copy; 2025 Mirante Solar. Todos os direitos reservados.</p>
-  </footer>
-
-</body>
-</html>
+    <div class="bg-white p-4 rounded shadow text-sm">
+      <p><strong>
