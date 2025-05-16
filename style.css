@@ -185,6 +185,20 @@ nav ul li a:hover {
   margin-bottom: 10px;
 }
 
+.section .missao, .section .valores, .section .servicos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.section .missao i,
+.section .valores i,
+.section .servicos i {
+  font-size: 28px;
+  color: #ffb900;
+}
+
 .socios {
   max-width: 100%;
   margin-bottom: 20px;
@@ -279,6 +293,7 @@ li::before {
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
   font-style: italic;
   font-size: 1.1rem;
+  text-align: center;
 }
 
 .avaliacao span {
