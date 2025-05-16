@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mirante Solar</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
   <header>
     <div class="header-content">
       <img src="logo.png" alt="Logo Mirante Solar" class="logo" />
       <nav>
-        <button class="menu-toggle">&#9776;</button>
         <ul class="menu">
-          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#quem-somos">Quem Somos</a></li>
           <li><a href="#servicos">Serviços</a></li>
           <li><a href="#avaliacoes">Avaliações</a></li>
           <li><a href="#contato">Contato</a></li>
         </ul>
+        <button class="menu-toggle">☰</button>
       </nav>
     </div>
   </header>
@@ -25,32 +27,31 @@
   <section class="hero-banner">
     <img src="banner.jpg" alt="Banner Mirante Solar" class="banner-img" />
     <div class="hero-overlay">
-      <h1>Energia solar ao seu alcance</h1>
+      <h1>ENERGIA SOLAR AO SEU ALCANCE</h1>
       <p>Atendendo Belém, Ananindeua, Marituba e Benevides com soluções completas em energia solar.</p>
-      <a href="https://wa.me/5598984024053" class="btn-agende">Agende uma visita</a>
+      <a href="https://api.whatsapp.com/send?phone=5591984024053" class="btn-agende">Agende agora</a>
     </div>
   </section>
 
-  <section id="sobre" class="section">
-    <h2>Quem somos</h2>
-    <div class="galeria">
-      <img src="socios.jpeg" alt="Sócios 1" />
-      <img src="socios2.jpeg" alt="Sócios 2" />
-      <img src="socios3.jpg" alt="Sócios 3" />
-      <img src="socios4.jpg" alt="Sócios 4" />
-    </div>
+  <section id="quem-somos" class="section">
+    <h2>Quem Somos</h2>
     <p class="frase-socios">Comprometidos com um futuro mais limpo e sustentável!</p>
-
-    <div class="valores-grid">
-      <div>
+    <div class="galeria">
+      <img src="socios.jpeg" alt="Foto dos sócios" class="socios" />
+      <img src="socios2.jpeg" alt="Foto dos sócios 2" class="socios" />
+      <img src="socios3.jpg" alt="Foto dos sócios 3" class="socios" />
+      <img src="socios4.jpg" alt="Foto dos sócios 4" class="socios" />
+    </div>
+    <div class="sobre-blocos">
+      <div class="bloco">
         <h3>Missão</h3>
         <p>Oferecer soluções sustentáveis em energia solar com excelência, confiabilidade e impacto positivo nas comunidades atendidas.</p>
       </div>
-      <div>
+      <div class="bloco">
         <h3>Visão</h3>
         <p>Ser referência em energia solar no Pará, promovendo um futuro mais limpo e acessível.</p>
       </div>
-      <div>
+      <div class="bloco">
         <h3>Valores</h3>
         <ul>
           <li>Comprometimento com o cliente</li>
@@ -65,67 +66,64 @@
 
   <section id="servicos" class="section">
     <h2>Serviços</h2>
-    <div class="valores-grid">
-      <div>
-        <h3>Instalação</h3>
-        <p>Sistemas fotovoltaicos para residências e empresas.</p>
-      </div>
-      <div>
-        <h3>Manutenção</h3>
-        <p>Manutenção preventiva e corretiva para garantir desempenho.</p>
-      </div>
-      <div>
-        <h3>Consultoria</h3>
-        <p>Dimensionamento e planejamento de projetos solares eficientes.</p>
-      </div>
-    </div>
+    <ul>
+      <li>⚡ Instalação de sistemas fotovoltaicos</li>
+      <li>🔧 Manutenção preventiva e corretiva</li>
+      <li>📊 Consultoria e dimensionamento de projetos solares</li>
+    </ul>
   </section>
 
   <section id="avaliacoes" class="section">
     <h2>O que dizem nossos clientes</h2>
     <div class="avaliacao">
-      <p>“Excelente atendimento e serviço de qualidade. Minha conta caiu pela metade!”</p>
-      <img src="estrelas.png" alt="5 estrelas" />
-      <span>João Ferreira</span>
+      <p>“Serviço excelente, muito atenciosos e eficientes!”</p>
+      <img src="estrelas.png" alt="Avaliação 5 estrelas" width="100" />
+      <span>— João M.</span>
     </div>
     <div class="avaliacao">
-      <p>“Muito profissionais e eficientes. Recomendo com certeza!”</p>
-      <img src="estrelas.png" alt="5 estrelas" />
-      <span>Maria Oliveira</span>
-    </div>
-    <div class="avaliacao">
-      <p>“A instalação foi rápida e bem feita. Agora só alegria!”</p>
-      <img src="estrelas.png" alt="5 estrelas" />
-      <span>Carlos Silva</span>
+      <p>“Recomendo fortemente! Atendimento de primeira.”</p>
+      <img src="estrelas.png" alt="Avaliação 5 estrelas" width="100" />
+      <span>— Carla S.</span>
     </div>
   </section>
 
   <section id="contato" class="section">
-    <h2>Contato</h2>
+    <h2>Fale Conosco</h2>
     <form class="form-contato">
       <input type="text" placeholder="Seu nome" required />
       <input type="email" placeholder="Seu email" required />
       <textarea placeholder="Sua mensagem" rows="5" required></textarea>
       <button type="submit">Enviar</button>
     </form>
-    <br />
-    <a href="https://www.google.com/maps/place/Mirante+Solar+%7C+Energia+Solar+Residencial+e+Comercial/@-1.3523506,-48.3917565,17z/data=!3m1!4b1!4m6!3m5!1s0x92a45f000d490ded:0x628c632337ddbc63!8m2!3d-1.3523506!4d-48.3917565!16s%2Fg%2F11w88kb92z?entry=ttu" target="_blank" class="btn-agende">Ver no Google Maps</a>
+    <p style="text-align: center; margin-top: 20px;">
+      <a href="https://www.google.com/maps/place/Mirante+Solar+%7C+Energia+Solar+Residencial+e+Comercial/@-1.3523506,-48.3917565,17z/data=!3m1!4b1!4m6!3m5!1s0x92a45f000d490ded:0x628c632337ddbc63!8m2!3d-1.3523506!4d-48.3917565!16s%2Fg%2F11w88kb92z?entry=ttu" target="_blank">Ver no Google Maps</a>
+    </p>
   </section>
 
+  <a href="https://api.whatsapp.com/send?phone=5591984024053" class="whatsapp">
+    <img src="whatsapp.png" alt="WhatsApp" width="32" height="32" />
+  </a>
+
   <footer>
-    <p>&copy; 2025 Mirante Solar. Todos os direitos reservados.</p>
-    <div>
-      <a href="https://www.instagram.com/mirantesolar/"><img src="instagram.png" alt="Instagram" width="32" /></a>
-      <a href="https://www.facebook.com/MiranteSolar"><img src="facebook.png" alt="Facebook" width="32" /></a>
+    <p>&copy; 2025 Mirante Solar</p>
+    <div style="margin-top: 10px;">
+      <a href="https://www.instagram.com/mirantesolar/" target="_blank">
+        <img src="instagram.png" alt="Instagram" width="24" />
+      </a>
+      <a href="https://www.facebook.com/MiranteSolar" target="_blank" style="margin-left: 10px;">
+        <img src="facebook.png" alt="Facebook" width="24" />
+      </a>
     </div>
   </footer>
 
-  <a href="https://wa.me/5598984024053" class="whatsapp"><img src="whatsapp.png" alt="WhatsApp" width="32" /></a>
-
   <script>
-    document.querySelector(".menu-toggle").addEventListener("click", () => {
-      document.querySelector("nav ul.menu").classList.toggle("active");
+    const toggle = document.querySelector(".menu-toggle");
+    const menu = document.querySelector(".menu");
+
+    toggle.addEventListener("click", () => {
+      menu.classList.toggle("active");
     });
   </script>
 </body>
+
 </html>
