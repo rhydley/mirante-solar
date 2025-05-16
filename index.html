@@ -1,157 +1,307 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mirante Solar - Energia Solar</title>
-  <link rel="stylesheet" href="style.css" />
-  <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    rel="stylesheet"
-  />
-</head>
-<body>
-  <header>
-    <div class="header-content">
-      <img src="logo.png" alt="Mirante Solar" class="logo" />
-      <nav>
-        <ul class="menu">
-          <li><a href="#quem-somos">Quem Somos</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#instalacoes">Instalações</a></li>
-          <li><a href="#avaliacoes">Avaliações</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <section class="hero-banner">
-    <img src="banner.jpg" alt="Banner Mirante Solar" class="banner-img" />
-    <div class="hero-overlay">
-      <h1>ENERGIA SOLAR AO SEU ALCANCE</h1>
-      <p>Atendendo Belém, Ananindeua, Marituba e Benevides com soluções completas em energia solar.</p>
-      <a href="#contato" class="btn-agende">Agende sua instalação</a>
-    </div>
-  </section>
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #07343f;
+  background-color: #fdffff;
+  line-height: 1.6;
+}
 
-  <section id="quem-somos" class="section">
-    <h2>Quem Somos</h2>
-    <p class="subtitulo">Comprometidos com um futuro mais limpo e sustentável!</p>
-    <div class="socios-galeria">
-      <img src="socios.jpeg" alt="Sócio 1" />
-      <img src="socios2.jpeg" alt="Sócio 2" />
-      <img src="socios3.jpg" alt="Sócio 3" />
-      <img src="socios4.jpg" alt="Sócio 4" />
-      <img src="socios5.jpeg" alt="Sócio 5" />
-      <img src="socios6.jpeg" alt="Sócio 6" />
-    </div>
+header {
+  background-color: #ffffff;
+  color: #07343f;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
 
-    <div class="miss-vis-valores">
-      <div class="item">
-        <i class="fas fa-bolt icone"></i>
-        <h3>Missão</h3>
-        <p>
-          Oferecer soluções sustentáveis em energia solar com excelência, confiabilidade e impacto positivo nas comunidades atendidas.
-        </p>
-      </div>
-      <div class="item">
-        <i class="fas fa-eye icone"></i>
-        <h3>Visão</h3>
-        <p>
-          Ser referência em energia solar no Pará, promovendo um futuro mais limpo e acessível.
-        </p>
-      </div>
-      <div class="item">
-        <i class="fas fa-heart icone"></i>
-        <h3>Valores</h3>
-        <ul>
-          <li>Comprometimento com o cliente</li>
-          <li>Sustentabilidade</li>
-          <li>Transparência</li>
-          <li>Inovação</li>
-          <li>Responsabilidade social</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  <section id="servicos" class="section">
-    <h2>Serviços</h2>
-    <ul class="servicos-lista">
-      <li><i class="fas fa-solar-panel"></i> Instalação de sistemas fotovoltaicos</li>
-      <li><i class="fas fa-tools"></i> Manutenção preventiva e corretiva</li>
-      <li><i class="fas fa-chart-area"></i> Consultoria e dimensionamento de projetos solares</li>
-    </ul>
-  </section>
+.logo {
+  height: 50px;
+}
 
-  <section id="instalacoes" class="section">
-    <h2>Instalações</h2>
-    <div class="galeria">
-      <img src="inst1.jpeg" alt="Instalação 1" />
-      <img src="inst2.jpeg" alt="Instalação 2" />
-      <img src="inst3.jpeg" alt="Instalação 3" />
-      <img src="inst4.jpeg" alt="Instalação 4" />
-      <img src="inst5.jpeg" alt="Instalação 5" />
-      <img src="inst6.jpeg" alt="Instalação 6" />
-    </div>
-  </section>
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
 
-  <section id="avaliacoes" class="section">
-    <h2>O que dizem nossos clientes</h2>
-    <div class="avaliacao">
-      <p>"Atendimento excelente, equipe muito profissional e rápida. Recomendo!"</p>
-      <img src="estrelas.png" alt="5 estrelas" class="estrelas" />
-      <span>- Ana Silva</span>
-    </div>
-    <div class="avaliacao">
-      <p>"Economizei muito com a energia solar instalada pela Mirante Solar."</p>
-      <img src="estrelas.png" alt="5 estrelas" class="estrelas" />
-      <span>- João Pereira</span>
-    </div>
-    <div class="avaliacao">
-      <p>"Instalação impecável, sistema funcionando perfeitamente."</p>
-      <img src="estrelas.png" alt="5 estrelas" class="estrelas" />
-      <span>- Maria Oliveira</span>
-    </div>
-  </section>
+nav ul li a {
+  color: #07343f;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
 
-  <section id="localizacao" class="section">
-    <h2>Localização</h2>
-    <p>Nosso espaço físico está localizado em Belém - PA.</p>
-    <a
-      href="https://www.google.com/maps/place/Mirante+Solar+%7C+Energia+Solar+Residencial+e+Comercial/@-1.3523506,-48.3917565,17z/data=!3m1!4b1!4m6!3m5!1s0x92a45f000d490ded:0x628c632337ddbc63!8m2!3d-1.3523506!4d-48.3917565!16s%2Fg%2F11w88kb92z?entry=ttu&g_ep=EgoyMDI1MDUxMy4xIKXMDSoASAFQAw%3D%3D"
-      target="_blank"
-      rel="noopener"
-      class="btn-maps"
-      >Ver no Google Maps</a
-    >
-  </section>
+nav ul li a:hover {
+  color: #ffb900;
+}
 
-  <section id="contato" class="section">
-    <h2>Contato</h2>
-    <p>Telefone: (91) 98402-4053</p>
-    <p>Email: <a href="mailto:mirantesolar2023@gmail.com">mirantesolar2023@gmail.com</a></p>
-    <div class="redes-sociais">
-      <a href="https://www.instagram.com/mirantesolar/" target="_blank" rel="noopener">
-        <img src="instagram.png" alt="Instagram" />
-      </a>
-      <a href="https://www.facebook.com/MiranteSolar" target="_blank" rel="noopener">
-        <img src="facebook.png" alt="Facebook" />
-      </a>
-    </div>
-  </section>
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  color: #07343f;
+  border: none;
+  cursor: pointer;
+}
 
-  <a
-    href="https://wa.me/5591984024053"
-    target="_blank"
-    class="whatsapp"
-    title="Fale conosco no WhatsApp"
-    ><img src="whatsapp.png" alt="WhatsApp" />
-  </a>
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
 
-  <footer>
-    <p>© 2025 Mirante Solar. Todos os direitos reservados.</p>
-  </footer>
-</body>
-</html>
+  nav ul.menu {
+    display: none;
+    flex-direction: column;
+    background-color: #ffffff;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    border: 1px solid #07343f20;
+    border-radius: 10px;
+  }
+
+  nav ul.menu.active {
+    display: flex;
+  }
+
+  nav ul.menu li {
+    padding: 10px 0;
+    text-align: right;
+    padding-right: 20px;
+  }
+}
+
+.hero-banner {
+  position: relative;
+  margin-top: 70px;
+}
+
+.banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #07343f;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 90%;
+}
+
+.hero-overlay h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #ffb900;
+}
+
+.hero-overlay p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn-agende {
+  display: inline-block;
+  background-color: #ffb900;
+  color: #07343f;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-agende:hover {
+  background-color: #e0a200;
+}
+
+.section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2rem;
+  color: #07343f;
+  margin-bottom: 20px;
+}
+
+.sobre-nos-imgs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.sobre-nos-imgs img {
+  width: 220px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.frase-socios {
+  font-style: italic;
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  text-align: center;
+}
+
+.info-cards div {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+ul {
+  padding-left: 20px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.galeria img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-contato input,
+.form-contato textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.form-contato button {
+  background-color: #07343f;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form-contato button:hover {
+  background-color: #05566c;
+}
+
+.avaliacao {
+  background-color: #f1f1f1;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.avaliacao img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.avaliacao span {
+  display: block;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #07343f;
+}
+
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.whatsapp img {
+  width: 60px;
+  height: 60px;
+}
+
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons a img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s;
+}
+
+.social-icons a img:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  background-color: #07343f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.map-link {
+  display: inline-block;
+  background-color: #ffb900;
+  color: #07343f;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+.map-link:hover {
+  background-color: #e0a200;
+}
