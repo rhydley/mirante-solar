@@ -4,45 +4,90 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mirante Solar</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    :root {
-      --cor-primaria: #ffb900;
-      --cor-secundaria: #07343f;
-      --cor-fundo: #fdffff;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
-<body class="bg-[--cor-fundo] text-[--cor-secundaria] font-sans">
-
-  <!-- Cabeçalho com logo -->
-  <header class="bg-white shadow-md">
-    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-      <a href="index.html">
-        <img src="logo.png" alt="Logo da Mirante Solar" class="h-16 w-auto" />
-      </a>
-    </div>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo Mirante Solar" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#avaliacoes">Avaliações</a></li>
+        <li><a href="#galeria">Galeria</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Banner -->
-  <section>
-    <img src="banner.jpg" alt="Banner Mirante Solar" class="w-full max-h-[400px] object-cover" />
+  <section class="hero">
+    <h1>Energia Solar ao Seu Alcance</h1>
+    <p>Atendendo Belém, Ananindeua, Marituba e Benevides com soluções completas em energia solar.</p>
   </section>
 
-  <!-- Conteúdo principal -->
-  <main class="max-w-4xl mx-auto px-6 py-10 text-center">
-    <h1 class="text-3xl font-bold mb-4">Energia solar com qualidade e confiança</h1>
-    <p class="text-lg mb-6">
-      A Mirante Solar atende Belém, Ananindeua, Marituba, Benevides e região. <br />
-      Oferecemos instalação e manutenção de sistemas solares com eficiência e profissionalismo.
-    </p>
+  <section id="sobre" class="section">
+    <h2>Quem Somos</h2>
+    <img src="socios.jpg" alt="Sócios da empresa" class="socios" />
+    <p class="frase-socios">Unindo conhecimento e propósito para transformar o seu futuro com energia limpa!</p>
+    <h3>Missão</h3>
+    <p>Oferecer soluções sustentáveis em energia solar com excelência, confiabilidade e impacto positivo nas comunidades atendidas.</p>
+    <h3>Visão</h3>
+    <p>Ser referência em energia solar no Pará, promovendo um futuro mais limpo e acessível.</p>
+    <h3>Valores</h3>
+    <ul>
+      <li>Comprometimento com o cliente</li>
+      <li>Sustentabilidade</li>
+      <li>Transparência</li>
+      <li>Inovação</li>
+      <li>Responsabilidade social</li>
+    </ul>
+  </section>
 
-    <!-- Botões -->
-    <div class="flex flex-col sm:flex-row gap-4 justify-center mt-6">
-      <a href="https://wa.me/5591984024053" target="_blank"
-         class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded text-lg font-medium">
-        Fale no WhatsApp
-      </a>
+  <section id="servicos" class="section">
+    <h2>Serviços</h2>
+    <ul>
+      <li>Instalação de sistemas fotovoltaicos</li>
+      <li>Manutenção preventiva e corretiva</li>
+      <li>Consultoria e dimensionamento de projetos solares</li>
+    </ul>
+  </section>
 
-      <a href="agendamento.html"
-         class="bg-[--cor-secundaria] hover:bg-[#095766] text-white px-6 py-3 rounded text-lg font-m
+  <section id="avaliacoes" class="section">
+    <h2>O que dizem nossos clientes</h2>
+    <div class="avaliacao">
+      <p>"Serviço impecável e atendimento excelente. Muito satisfeito com minha economia!"</p>
+      <span>- João Carvalho</span>
+    </div>
+    <div class="avaliacao">
+      <p>"Equipe competente e prestativa. O sistema foi instalado com rapidez e qualidade."</p>
+      <span>- Maria Ferreira</span>
+    </div>
+    <div class="avaliacao">
+      <p>"Muito profissionalismo do começo ao fim. Recomendo a Mirante Solar sem hesitar."</p>
+      <span>- Carlos Oliveira</span>
+    </div>
+  </section>
+
+  <section id="galeria" class="section">
+    <h2>Nossas Instalações</h2>
+    <div class="galeria">
+      <img src="inst1.jpg" alt="Instalação 1" />
+      <img src="inst2.jpg" alt="Instalação 2" />
+      <img src="inst3.jpg" alt="Instalação 3" />
+      <img src="inst4.jpg" alt="Instalação 4" />
+      <img src="inst5.jpg" alt="Instalação 5" />
+      <img src="inst6.jpg" alt="Instalação 6" />
+    </div>
+  </section>
+
+  <section id="contato" class="section">
+    <h2>Fale Conosco</h2>
+    <p><strong>Telefone:</strong> (91) 98402-4053</p>
+    <p><strong>Email:</strong> mirantesolar2023@gmail.com</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mirante Solar - Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
