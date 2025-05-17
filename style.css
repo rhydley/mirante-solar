@@ -384,7 +384,9 @@ footer {
 }
 
 .servico-item img {
-  width: 60px;
+  max-width: 60px;
+  height: auto;
+  object-fit: contain;
   margin-bottom: 15px;
 }
 
