@@ -249,6 +249,45 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.mvv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.mvv-item {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  max-width: 280px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s;
+}
+
+.mvv-item:hover {
+  transform: translateY(-5px);
+}
+
+.mvv-item img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.mvv-item h3 {
+  font-size: 1.4rem;
+  color: var(--verde-escuro);
+  margin-bottom: 10px;
+}
+
+.mvv-item p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+
 
 #sobre .team img {
   width: 100%;
