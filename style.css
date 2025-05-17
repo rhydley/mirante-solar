@@ -474,4 +474,44 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+  .avaliacoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.avaliacao-item {
+  background-color: #ffffff;
+  border: 2px solid var(--amarelo);
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  max-width: 300px;
+  padding: 25px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.avaliacao-item:hover {
+  transform: translateY(-5px);
+}
+
+.avaliacao-item img {
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+.avaliacao-item p {
+  font-style: italic;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.avaliacao-item span {
+  font-weight: bold;
+  color: var(--verde-escuro);
+}
+
 }
