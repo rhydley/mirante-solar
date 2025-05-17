@@ -187,3 +187,43 @@ footer {
 .social-icons a img:hover {
   transform: scale(1.1);
 }
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: var(--verde-escuro);
+}
+
+@media (max-width: 768px) {
+  nav {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    background: var(--branco);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+    width: 100%;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  nav a {
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
