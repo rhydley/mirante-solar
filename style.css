@@ -513,5 +513,49 @@ footer {
   font-weight: bold;
   color: var(--verde-escuro);
 }
+/* Fale Conosco */
+.contato {
+  background-color: #f5f9fa;
+  padding: 60px 30px;
+  border-top: 3px solid var(--amarelo);
+}
+
+.contato-subtitulo {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+form input,
+form textarea {
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  transition: 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: var(--amarelo);
+  outline: none;
+  box-shadow: 0 0 4px rgba(255, 185, 0, 0.4);
+}
+
+form button {
+  background-color: var(--amarelo);
+  color: var(--verde-escuro);
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #e0a800;
+}
 
 }
