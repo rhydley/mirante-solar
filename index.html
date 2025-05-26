@@ -100,56 +100,66 @@
 
 
 
-
 <script>
-document.addEventListener('DOMContentLoaded', function () {
-  const menuButton = document.querySelector('.md\:hidden button');
-  const navMenu = document.querySelector('header nav');
-  if (menuButton && navMenu) {
-    function toggleMenu() {
-      navMenu.classList.toggle('hidden');
-    }
-    menuButton.addEventListener('click', toggleMenu);
-    menuButton.addEventListener('touchstart', toggleMenu);
+document.addEventListener('scroll', function () {
+  const header = document.querySelector('header');
+  const links = header.querySelectorAll('a, button, svg');
+
+  if (window.scrollY > 10) {
+    header.classList.add('bg-white', 'shadow-md');
+    header.classList.remove('bg-transparent');
+    links.forEach(el => {
+      el.classList.remove('text-white');
+      el.classList.add('text-dark-blue');
+    });
+  } else {
+    header.classList.remove('bg-white', 'shadow-md');
+    header.classList.add('bg-transparent');
+    links.forEach(el => {
+      el.classList.remove('text-dark-blue');
+      el.classList.add('text-white');
+    });
   }
 });
 </script>
 
 
 
-
-
 <script>
 document.addEventListener('DOMContentLoaded', function () {
   const menuButton = document.querySelector('.md\:hidden button');
   const navMenu = document.querySelector('header nav');
   if (menuButton && navMenu) {
-    function toggleMenu() {
+    menuButton.addEventListener('click', function () {
       navMenu.classList.toggle('hidden');
-    }
-    menuButton.addEventListener('click', toggleMenu);
-    menuButton.addEventListener('touchstart', toggleMenu);
+    });
   }
 });
 </script>
-
 
 </body></html>
 
 
-
 <script>
-document.addEventListener('DOMContentLoaded', function () {
-  const menuButton = document.querySelector('.md\:hidden button');
-  const navMenu = document.querySelector('header nav');
-  if (menuButton && navMenu) {
-    function toggleMenu() {
-      navMenu.classList.toggle('hidden');
-    }
-    menuButton.addEventListener('click', toggleMenu);
-    menuButton.addEventListener('touchstart', toggleMenu);
+document.addEventListener('scroll', function () {
+  const header = document.querySelector('header');
+  const links = header.querySelectorAll('a, button, svg');
+
+  if (window.scrollY > 10) {
+    header.classList.add('bg-white', 'shadow-md');
+    header.classList.remove('bg-transparent');
+    links.forEach(el => {
+      el.classList.remove('text-white');
+      el.classList.add('text-dark-blue');
+    });
+  } else {
+    header.classList.remove('bg-white', 'shadow-md');
+    header.classList.add('bg-transparent');
+    links.forEach(el => {
+      el.classList.remove('text-dark-blue');
+      el.classList.add('text-white');
+    });
   }
 });
 </script>
-
 
